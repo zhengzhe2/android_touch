@@ -1,0 +1,71 @@
+1.Activity dispatchTouchEvent 返回true
+2020-12-16 15:20:57.761 9385-9385/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:0
+2020-12-16 15:20:57.896 9385-9385/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:1
+
+2.Activity dispatchTouchEvent 返回false
+2020-12-16 15:23:48.922 9769-9769/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:0
+2020-12-16 15:23:49.032 9769-9769/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:1
+
+3.ViewGroup dispatchTouchEvent 返回true
+2020-12-16 15:25:00.998 10102-10102/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:0
+2020-12-16 15:25:00.998 10102-10102/com.example.androidtouch D/MyViewGroup: dispatchTouchEvent action:0
+2020-12-16 15:25:01.095 10102-10102/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:1
+2020-12-16 15:25:01.096 10102-10102/com.example.androidtouch D/MyViewGroup: dispatchTouchEvent action:1
+
+4.ViewGroup dispatchTouchEvent 返回false
+2020-12-16 15:29:11.549 10498-10498/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:0
+2020-12-16 15:29:11.549 10498-10498/com.example.androidtouch D/MyViewGroup: dispatchTouchEvent action:0
+2020-12-16 15:29:11.549 10498-10498/com.example.androidtouch D/MainActivity: onTouchEvent action:0
+2020-12-16 15:29:11.655 10498-10498/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:1
+2020-12-16 15:29:11.655 10498-10498/com.example.androidtouch D/MainActivity: onTouchEvent action:1
+
+5.ViewGroup onInterceptTouchEvent 返回true
+2020-12-16 15:32:08.828 10832-10832/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:0
+2020-12-16 15:32:08.828 10832-10832/com.example.androidtouch D/MyViewGroup: dispatchTouchEvent action:0
+2020-12-16 15:32:08.828 10832-10832/com.example.androidtouch D/MyViewGroup: onInterceptTouchEvent action:0
+2020-12-16 15:32:08.828 10832-10832/com.example.androidtouch D/MyViewGroup: onTouchEvent action:0
+2020-12-16 15:32:08.828 10832-10832/com.example.androidtouch D/MainActivity: onTouchEvent action:0
+2020-12-16 15:32:08.936 10832-10832/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:1
+2020-12-16 15:32:08.936 10832-10832/com.example.androidtouch D/MainActivity: onTouchEvent action:1
+
+6.ViewGroup onInterceptTouchEvent 返回false
+2020-12-16 15:35:27.852 11172-11172/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:0
+2020-12-16 15:35:27.853 11172-11172/com.example.androidtouch D/MyViewGroup: dispatchTouchEvent action:0
+2020-12-16 15:35:27.853 11172-11172/com.example.androidtouch D/MyViewGroup: onInterceptTouchEvent action:0
+2020-12-16 15:35:27.853 11172-11172/com.example.androidtouch D/MyView: dispatchTouchEvent action:0
+2020-12-16 15:35:27.853 11172-11172/com.example.androidtouch D/MyView: onTouchEvent action:0
+2020-12-16 15:35:27.853 11172-11172/com.example.androidtouch D/MyViewGroup: onTouchEvent action:0
+2020-12-16 15:35:27.853 11172-11172/com.example.androidtouch D/MainActivity: onTouchEvent action:0
+2020-12-16 15:35:27.992 11172-11172/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:1
+2020-12-16 15:35:27.992 11172-11172/com.example.androidtouch D/MainActivity: onTouchEvent action:1
+
+7.View dispatchTouchEvent 返回true
+2020-12-16 15:39:45.986 11663-11663/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:0
+2020-12-16 15:39:45.986 11663-11663/com.example.androidtouch D/MyViewGroup: dispatchTouchEvent action:0
+2020-12-16 15:39:45.986 11663-11663/com.example.androidtouch D/MyViewGroup: onInterceptTouchEvent action:0
+2020-12-16 15:39:45.986 11663-11663/com.example.androidtouch D/MyView: dispatchTouchEvent action:0
+2020-12-16 15:39:46.119 11663-11663/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:1
+2020-12-16 15:39:46.120 11663-11663/com.example.androidtouch D/MyViewGroup: dispatchTouchEvent action:1
+2020-12-16 15:39:46.120 11663-11663/com.example.androidtouch D/MyViewGroup: onInterceptTouchEvent action:1
+2020-12-16 15:39:46.120 11663-11663/com.example.androidtouch D/MyView: dispatchTouchEvent action:1
+
+8.View dispatchTouchEvent 返回false
+2020-12-16 15:41:02.659 11856-11856/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:0
+2020-12-16 15:41:02.659 11856-11856/com.example.androidtouch D/MyViewGroup: dispatchTouchEvent action:0
+2020-12-16 15:41:02.659 11856-11856/com.example.androidtouch D/MyViewGroup: onInterceptTouchEvent action:0
+2020-12-16 15:41:02.659 11856-11856/com.example.androidtouch D/MyView: dispatchTouchEvent action:0
+2020-12-16 15:41:02.659 11856-11856/com.example.androidtouch D/MyViewGroup: onTouchEvent action:0
+2020-12-16 15:41:02.659 11856-11856/com.example.androidtouch D/MainActivity: onTouchEvent action:0
+2020-12-16 15:41:02.783 11856-11856/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:1
+2020-12-16 15:41:02.783 11856-11856/com.example.androidtouch D/MainActivity: onTouchEvent action:1
+
+9.不做任何处理
+2020-12-16 15:42:12.683 12097-12097/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:0
+2020-12-16 15:42:12.683 12097-12097/com.example.androidtouch D/MyViewGroup: dispatchTouchEvent action:0
+2020-12-16 15:42:12.683 12097-12097/com.example.androidtouch D/MyViewGroup: onInterceptTouchEvent action:0
+2020-12-16 15:42:12.684 12097-12097/com.example.androidtouch D/MyView: dispatchTouchEvent action:0
+2020-12-16 15:42:12.684 12097-12097/com.example.androidtouch D/MyView: onTouchEvent action:0
+2020-12-16 15:42:12.684 12097-12097/com.example.androidtouch D/MyViewGroup: onTouchEvent action:0
+2020-12-16 15:42:12.684 12097-12097/com.example.androidtouch D/MainActivity: onTouchEvent action:0
+2020-12-16 15:42:12.799 12097-12097/com.example.androidtouch D/MainActivity: dispatchTouchEvent action:1
+2020-12-16 15:42:12.799 12097-12097/com.example.androidtouch D/MainActivity: onTouchEvent action:1
